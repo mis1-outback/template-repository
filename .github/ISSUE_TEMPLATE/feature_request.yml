@@ -12,15 +12,16 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: textarea
     id: feature_items
     attributes:
-      label: 들어가야 하는 기능들
+      label: 기능 목록
       description: 이 기능에 반드시 포함되어야 할 항목들
-      options:
-        - label: API 엔드포인트 제공
-        - label: 권한 / 인증 처리
-        - label: 입력값 검증
+      placeholder: |
+        - [ ] 첫번째 기능
+        - [ ] 두번째 기능
+    validations:
+      required: true
 
   - type: textarea
     id: considerations
