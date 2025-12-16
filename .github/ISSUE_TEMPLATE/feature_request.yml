@@ -1,0 +1,34 @@
+name: Feature Request
+description: 기능 명세 작성용 템플릿
+labels: [enhancement]
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 기능 요약
+      description: 구현하려는 기능을 한 문장으로 요약해 주세요.
+      placeholder: 예) 사용자 알림 설정 기능
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: feature_items
+    attributes:
+      label: 들어가야 하는 기능들
+      description: 이 기능에 반드시 포함되어야 할 항목들
+      options:
+        - label: API 엔드포인트 제공
+        - label: 권한 / 인증 처리
+        - label: 입력값 검증
+
+  - type: textarea
+    id: considerations
+    attributes:
+      label: 고려사항
+      description: 사용할 클래스, 라이브러리, 기술 등 고려할 사항을 나열해 주세요.
+      placeholder:
+        - Stream 클래스로 구현
+        - Tsid 라이브러리 사용
+        - 인터페이스 정의하여 사용
+        - util 패키지에 있는 ??? 클래스 사용
