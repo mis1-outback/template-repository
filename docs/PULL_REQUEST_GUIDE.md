@@ -5,7 +5,7 @@
 ### 1. 진행하고자 하는 Issue 클릭
 
 ### 2. Development 항목에서 create a branch 클릭하여 원격 브랜치 새로 생성
-- Branch source로 "release" 선택
+- Branch source로 "dev" 선택
 - 브랜치 이름은 영어로 작성하되, 해당 Issue를 잘 표현하도록 작성
   > "feature/signup"  
   > "fix/login"
